@@ -6,7 +6,7 @@
 
 ### 主要功能
   * 实现了登录，注册，更改密码的功能
-  ![Image](https://github.com/lizhixiang688/winner_homework/blob/master/img/Screenshot_20210221_155647_com.example.netease_cl.jpg)
+  ![Image](https://github.com/lizhixiang688/winner_homework/blob/master/img/Screenshot_20210221_155647_com.example.netease_cl.jpg style="zoom:50%;")
   * 可以进行搜索，显示推荐歌单
   * 登陆后显示自己的歌单，历史播放，关注
   * 音乐播放功能，可支持后台播放，可用进度条控制
