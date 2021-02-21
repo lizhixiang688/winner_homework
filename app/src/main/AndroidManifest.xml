@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.netease_cloud_music">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/icon_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_icon"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Netease_Cloud_Music"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CloudActivity"></activity>
+        <activity android:name=".FollowActivity" />
+        <activity android:name=".Recent_playActivity" />
+        <activity android:name=".Search_result_Activity" />
+        <activity android:name=".User_detail_Activity" />
+        <activity android:name=".SearchActivity" />
+
+        <service
+            android:name="service.PlayService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Music_play_Activity" />
+        <activity android:name=".PlaylistActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".VerificationloginActivity" />
+        <activity android:name=".EmailloginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".CoverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

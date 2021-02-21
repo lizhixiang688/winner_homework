@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/register"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintLeft_toRightOf="@id/to_return"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:onClick="to_return"
+        android:id="@+id/to_return"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/icon_return"
+        android:layout_marginTop="44dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <EditText
+            android:id="@+id/edittext_phone1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_edittext_inside"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:hint="@string/hint_phone"
+            android:textColor="#000"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:textSize="12sp"
+            android:textColorHint="#000"/>
+        <Button
+            android:id="@+id/send_verification1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/get_verification"
+            android:textColor="#FF000D"
+            android:textSize="10sp"
+            android:background="@drawable/shape_black"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_verfication1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/input_verification"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="12sp"
+        android:textColorHint="#000"
+        android:background="@drawable/shape_black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear"/>
+    <EditText
+        android:id="@+id/edit_password1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/hint_password"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        android:textColorHint="#000"
+        android:background="@drawable/shape_black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_verfication1"/>
+    <EditText
+        android:id="@+id/edit_nickname1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/input_nickname"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        android:textColorHint="#000"
+        android:background="@drawable/shape_black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_password1"/>
+
+    <Button
+        android:id="@+id/to_register"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:text="@string/sure"
+        android:textColor="#FF000D"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nickname1"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

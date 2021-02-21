@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/notes"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="18dp"
+        android:textSize="17sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/music_name1"
+            android:textColor="#97C6FF"
+            android:layout_marginStart="10dp"
+            android:textSize="13.5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/music_singer1"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp"
+                android:text="-"/>
+            <TextView
+                android:id="@+id/music_album1"
+                android:textColor="#000"
+                android:layout_marginStart="4dp"
+                android:textSize="11sp"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
